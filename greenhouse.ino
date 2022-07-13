@@ -8,6 +8,9 @@
 // pin connected to DH22 data line
 #define DATA_PIN 14
 
+// pin photocell connected to
+int photocellPin = 32;
+
 // create DHT22 instance
 DHT_Unified dht(DATA_PIN, DHT22);
 
