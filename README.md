@@ -4,7 +4,7 @@ A project using an ESP32 and Adafruit IO to control a monitor a greenhouse autom
 This project uses an ESP32 microcontroller to publish data to the Adafruit IO platform using MQTT and displays the data in feeds on the Adafruit website. 
 
 
-![1 Main_1x_DHT22AM2302TemperatursensorundLuftfeuchtigkeitssensor_6bbf04ec-fa59-464e-a1db-7d3cddbb5b1a_1024x copy](https://user-images.githubusercontent.com/58001312/178789327-3286fa4f-3e8e-4f32-b843-4666c70003e4.png)![ssldr34](https://user-images.githubusercontent.com/58001312/178789455-b13dc7d0-4518-4aad-983c-08776536f6fb.jpg)
+![1 Main_1x_DHT22AM2302TemperatursensorundLuftfeuchtigkeitssensor_6bbf04ec-fa59-464e-a1db-7d3cddbb5b1a_1024x copy](https://user-images.githubusercontent.com/58001312/178789327-3286fa4f-3e8e-4f32-b843-4666c70003e4.png)![ssldr34](https://user-images.githubusercontent.com/58001312/178789455-b13dc7d0-4518-4aad-983c-08776536f6fb.jpg)![esp32-devkitc-32d copy](https://user-images.githubusercontent.com/58001312/179230692-a79d2e87-c29f-47cf-8813-2fb4aa125735.png)
 
 
 
@@ -12,6 +12,7 @@ This project uses an ESP32 microcontroller to publish data to the Adafruit IO pl
 
 Currently the project publishes data from a DHT22 humidity and temperature sensor and a standard photocell, the data that is published to these feeds will eventually control shades and misters in different zones of a greenhouse depending on required values for each zone compared to actual values published by the sensors. 
 
+This project is developed using the Arduino IDE, hence all files uploaded to this repository will be using the .ino file type. 
 
 
 
