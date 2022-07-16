@@ -35,6 +35,9 @@ void setup() {
   // connect to io.adafruit.com
   Serial.print("Connecting to Adafruit IO");
   io.connect();
+  
+  humidifier->onMessage(handleHumidifier);
+  blind->onMessage(handleBlinds);
 
   // wait for a connection
   while(io.status() < AIO_CONNECTED) {
