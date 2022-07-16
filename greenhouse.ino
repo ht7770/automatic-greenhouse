@@ -18,6 +18,8 @@ DHT_Unified dht(DATA_PIN, DHT22);
 AdafruitIO_Feed *photocell = io.feed("photocell");
 AdafruitIO_Feed *temperature = io.feed("temperature");
 AdafruitIO_Feed *humidity = io.feed("humidity");
+AdafruitIO_Feed *humidifier = io.feed("humidifier")
+AdafruitIO_Feed *blind = io.feed("blind")
 
 void setup() {
 
