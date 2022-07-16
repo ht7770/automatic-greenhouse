@@ -48,6 +48,35 @@ void setup() {
 
 }
 
+// message handler for humidifier
+void handleHumidifier(AdafruitIO_data *data){
+  Serial.print("received signal for humidfier -> ")
+  if(data-toPinLevel() == HIGH){
+    Serial.println("ON");
+  }
+  else{
+    Serial.println("OFF");
+  }
+
+  // add code to write data to pin humidifier is connected to
+  // needs testing to see how long on is optimal to change humidity
+
+}
+
+// message handler for blinds
+void handleBlinds(AdafruitIO_data *data){
+  Serial.print("Received signal for blind -> ")
+  if(data->toPinLevel() == HIGH){
+    Serial.println("OPEN");
+  }
+  else{
+    Serial.println("CLOSED")
+  }
+
+  // add code to write data to pin blind is connected to
+  
+}
+
 void loop() {
   io.run();
 
