@@ -14,10 +14,12 @@ int photocellPin = 32;
 // create DHT22 instance
 DHT_Unified dht(DATA_PIN, DHT22);
 
-// set up the 'temperature' and 'humidity' feeds
+// set up the 'temperature', 'photocell' and 'humidity' feeds for sending data 
 AdafruitIO_Feed *photocell = io.feed("photocell");
 AdafruitIO_Feed *temperature = io.feed("temperature");
 AdafruitIO_Feed *humidity = io.feed("humidity");
+
+// set up 'humidifier' and 'blind' feeds for recieving data
 AdafruitIO_Feed *humidifier = io.feed("humidifier")
 AdafruitIO_Feed *blind = io.feed("blind")
 
